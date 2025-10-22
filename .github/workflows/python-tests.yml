@@ -31,6 +31,6 @@ jobs:
       run: coverage run --source=nvd3 -m unittest
 
     - name: Finish coveralls
-      run: coveralls
+      run: coveralls --service=github
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
